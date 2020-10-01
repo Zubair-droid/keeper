@@ -42,3 +42,5 @@ return {...prevValue,
            </div>
          );
        }
+
+       export default CreateArea;
