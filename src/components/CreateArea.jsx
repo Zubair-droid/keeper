@@ -8,7 +8,9 @@ function CreateArea(props) {
         title:"",
         content:""
       });
-
+      const [bool,setBool]=useState(false);
+      function handleChange(event)
+      {
       const {name, value }=event.target;
 setNotes((prevValue)=>{
 return {...prevValue,
