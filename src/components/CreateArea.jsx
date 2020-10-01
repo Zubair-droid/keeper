@@ -8,6 +8,17 @@ function CreateArea(props) {
         title:"",
         content:""
       });
+
+      const {name, value }=event.target;
+setNotes((prevValue)=>{
+return {...prevValue,
+    [name]:value}})
+
+    if(name==="content")
+    {
+      setBool(true);
+    }
+}
     return (
         
         <div>
