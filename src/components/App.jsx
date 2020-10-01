@@ -13,13 +13,7 @@ function App() {
     })
   }
 
-  // Two Ways of implementing
-  // function deleteNotes(id) {
-  //   addNotesArr(notesArr.filter((notes, index) => {
-  //     return index !== id;
-  //   }));
-  // }
-
+ 
   function deleteNotes(id) {
     addNotesArr((prevValue)=> prevValue.filter((notes, index) => {
       return index !== id;
