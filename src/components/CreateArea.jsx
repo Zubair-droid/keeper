@@ -3,7 +3,13 @@ import AddIcon from '@material-ui/icons/Add';
 import Fab from '@material-ui/core/Fab';
 import Zoom from '@material-ui/core/Zoom';
 function CreateArea(props) {
+
+    const [notes,setNotes]=useState({
+        title:"",
+        content:""
+      });
     return (
+        
         <div>
        <form autocomplete="off" className= "create-note">
                {bool&&<input name="title" placeholder="Title"  value={notes.title} onChange={handleChange}/>}
